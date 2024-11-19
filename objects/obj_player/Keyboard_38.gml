@@ -12,7 +12,7 @@ y += -move_speed;
 /// @DnDHash : 152907BD
 /// @DnDComment : Walk up sprite
 /// @DnDArgument : "imageind_relative" "1"
-/// @DnDArgument : "spriteind" "spr_player_walk_up"
-/// @DnDSaveInfo : "spriteind" "spr_player_walk_up"
-sprite_index = spr_player_walk_up;
+/// @DnDArgument : "spriteind" "run_1"
+/// @DnDSaveInfo : "spriteind" "run_1"
+sprite_index = run_1;
 image_index += 0;

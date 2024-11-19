@@ -3,7 +3,7 @@
 /// @DnDHash : 6B449707
 /// @DnDComment : Default sprite
 /// @DnDArgument : "imageind_relative" "1"
-/// @DnDArgument : "spriteind" "spr_player_idle"
-/// @DnDSaveInfo : "spriteind" "spr_player_idle"
-sprite_index = spr_player_idle;
+/// @DnDArgument : "spriteind" "idle_1"
+/// @DnDSaveInfo : "spriteind" "idle_1"
+sprite_index = idle_1;
 image_index += 0;
