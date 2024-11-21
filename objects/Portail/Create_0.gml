@@ -1,3 +1,9 @@
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 1E49106F
+/// @DnDArgument : "var" "teleport_direction"
+teleport_direction = 0;
+
 /// @DnDAction : YoYo Games.Movement.Add_Motion
 /// @DnDVersion : 1
 /// @DnDHash : 4CA14932
