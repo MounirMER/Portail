@@ -12,7 +12,14 @@ y += move_speed;
 /// @DnDHash : 6E40BDD7
 /// @DnDComment : Walk down sprite
 /// @DnDArgument : "imageind_relative" "1"
-/// @DnDArgument : "spriteind" "spr_player_walk_down"
-/// @DnDSaveInfo : "spriteind" "spr_player_walk_down"
-sprite_index = spr_player_walk_down;
+/// @DnDArgument : "spriteind" "run_1"
+/// @DnDSaveInfo : "spriteind" "run_1"
+sprite_index = run_1;
 image_index += 0;
+
+/// @DnDAction : YoYo Games.Instances.Sprite_Scale
+/// @DnDVersion : 1
+/// @DnDHash : 118C0FC6
+/// @DnDComment : Reset the horizontal scale$(13_10)to 1 so the player faces$(13_10)right again
+/// @DnDArgument : "xscale" "-1"
+image_xscale = -1;image_yscale = 1;
