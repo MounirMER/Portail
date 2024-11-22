@@ -79,6 +79,7 @@
     {"id":{"name":"obj_collision_parent","path":"objects/obj_collision_parent/obj_collision_parent.yy",},},
     {"id":{"name":"obj_edior_exit","path":"objects/obj_edior_exit/obj_edior_exit.yy",},},
     {"id":{"name":"obj_editor_wall","path":"objects/obj_editor_wall/obj_editor_wall.yy",},},
+    {"id":{"name":"obj_editor_water","path":"objects/obj_editor_water/obj_editor_water.yy",},},
     {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
     {"id":{"name":"obj_gate_particles","path":"objects/obj_gate_particles/obj_gate_particles.yy",},},
     {"id":{"name":"obj_manager","path":"objects/obj_manager/obj_manager.yy",},},
@@ -220,8 +221,8 @@
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
     {"roomId":{"name":"rm_level_1","path":"rooms/rm_level_1/rm_level_1.yy",},},
-    {"roomId":{"name":"rm_level_2","path":"rooms/rm_level_2/rm_level_2.yy",},},
     {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
+    {"roomId":{"name":"rm_level_2","path":"rooms/rm_level_2/rm_level_2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
