@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"Autre",
+  "%Name":"Murs",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"Autre",
-  "out_columns":8,
+  "name":"Murs",
+  "out_columns":55,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"walls_128x128",
-    "path":"sprites/walls_128x128/walls_128x128.yy",
+    "name":"ShinyNoiseBricksWindows",
+    "path":"sprites/ShinyNoiseBricksWindows/ShinyNoiseBricksWindows.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -28,11 +28,11 @@
   },
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
-  "tileHeight":128,
+  "tileHeight":16,
   "tilehsep":0,
   "tilevsep":0,
-  "tileWidth":128,
+  "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":64,
+  "tile_count":3072,
 }

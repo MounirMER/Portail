@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"FirstLevel",
+  "%Name":"Porte",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"FirstLevel",
-  "out_columns":55,
+  "name":"Porte",
+  "out_columns":2,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"ShinyNoiseBricksWindows",
-    "path":"sprites/ShinyNoiseBricksWindows/ShinyNoiseBricksWindows.yy",
+    "name":"animatedcastledoors",
+    "path":"sprites/animatedcastledoors/animatedcastledoors.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -28,11 +28,11 @@
   },
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
-  "tileHeight":16,
+  "tileHeight":80,
   "tilehsep":0,
   "tilevsep":0,
-  "tileWidth":16,
+  "tileWidth":64,
   "tilexoff":0,
-  "tileyoff":0,
-  "tile_count":3072,
+  "tileyoff":16,
+  "tile_count":6,
 }
