@@ -1,0 +1,26 @@
+{
+  "$GMPath":"",
+  "%Name":"Path12",
+  "closed":false,
+  "kind":0,
+  "name":"Path12",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":54.0,"y":434.0,},
+    {"speed":100.0,"x":308.0,"y":193.0,},
+    {"speed":100.0,"x":123.0,"y":170.0,},
+    {"speed":100.0,"x":325.0,"y":455.0,},
+    {"speed":100.0,"x":523.0,"y":151.0,},
+    {"speed":100.0,"x":196.0,"y":86.0,},
+    {"speed":100.0,"x":535.0,"y":288.0,},
+    {"speed":100.0,"x":501.0,"y":401.0,},
+    {"speed":100.0,"x":323.0,"y":257.0,},
+    {"speed":100.0,"x":89.0,"y":433.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,26 @@
+{
+  "$GMPath":"",
+  "%Name":"Path21",
+  "closed":false,
+  "kind":0,
+  "name":"Path21",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":43.0,"y":431.0,},
+    {"speed":100.0,"x":268.0,"y":438.0,},
+    {"speed":100.0,"x":532.0,"y":80.0,},
+    {"speed":100.0,"x":148.0,"y":72.0,},
+    {"speed":100.0,"x":540.0,"y":404.0,},
+    {"speed":100.0,"x":67.0,"y":150.0,},
+    {"speed":100.0,"x":94.0,"y":304.0,},
+    {"speed":100.0,"x":364.0,"y":398.0,},
+    {"speed":100.0,"x":517.0,"y":206.0,},
+    {"speed":100.0,"x":88.0,"y":373.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

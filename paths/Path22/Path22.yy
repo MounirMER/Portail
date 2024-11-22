@@ -1,0 +1,26 @@
+{
+  "$GMPath":"",
+  "%Name":"Path22",
+  "closed":false,
+  "kind":0,
+  "name":"Path22",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":69.0,"y":60.0,},
+    {"speed":100.0,"x":558.0,"y":424.0,},
+    {"speed":100.0,"x":318.0,"y":412.0,},
+    {"speed":100.0,"x":56.0,"y":426.0,},
+    {"speed":100.0,"x":517.0,"y":63.0,},
+    {"speed":100.0,"x":89.0,"y":49.0,},
+    {"speed":100.0,"x":88.0,"y":261.0,},
+    {"speed":100.0,"x":298.0,"y":362.0,},
+    {"speed":100.0,"x":593.0,"y":172.0,},
+    {"speed":100.0,"x":252.0,"y":152.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
