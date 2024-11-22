@@ -1,32 +1,19 @@
-/// @DnDAction : YoYo Games.Instances.Set_Sprite
-/// @DnDVersion : 1
-/// @DnDHash : 57044406
-/// @DnDArgument : "spriteind" "banner_dust_FX_1"
-/// @DnDSaveInfo : "spriteind" "banner_dust_FX_1"
-sprite_index = banner_dust_FX_1;
-image_index = 0;
+// Calculer la direction du projectile
+var projectile_direction = point_direction(obj_player.x, obj_player.y, device_mouse_x(0), device_mouse_y(0));
 
-/// @DnDAction : YoYo Games.Instances.Destroy_Instance
-/// @DnDVersion : 1
-/// @DnDHash : 38F01ED2
-/// @DnDApplyTo : {obj_player}
-with(obj_player) instance_destroy();
+// Calculer la position du point d'impact
+var collision_x = x;
+var collision_y = y;
 
-/// @DnDAction : YoYo Games.Movement.Set_Speed
-/// @DnDVersion : 1
-/// @DnDHash : 1C840226
-speed = 0;
+// Reculer davantage dans l'axe du tir pour une position sûre
+var safe_x = collision_x - lengthdir_x(32, projectile_direction); // Recul augmenté à 16 pixels
+var safe_y = collision_y - lengthdir_y(32, projectile_direction);
 
-/// @DnDAction : YoYo Games.Instances.Create_Instance
-/// @DnDVersion : 1
-/// @DnDHash : 3DF37EC5
-/// @DnDArgument : "xpos" "self.x"
-/// @DnDArgument : "ypos" "self.y"
-/// @DnDArgument : "objectid" "obj_player"
-/// @DnDSaveInfo : "objectid" "obj_player"
-instance_create_layer(self.x, self.y, "Instances", obj_player);
+// Supprimer l'ancienne instance du joueur
+with (obj_player) instance_destroy();
 
-/// @DnDAction : YoYo Games.Instances.Destroy_Instance
-/// @DnDVersion : 1
-/// @DnDHash : 0F411E8D
+// Créer une nouvelle instance du joueur à la position ajustée
+instance_create_layer(safe_x, safe_y, "Instances", obj_player);
+
+// Supprimer l'objet actuel si nécessaire
 instance_destroy();
