@@ -41,8 +41,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_baddie_idle",
-    "path":"sprites/spr_baddie_idle/spr_baddie_idle.yy",
+    "name":"mg_3_0",
+    "path":"sprites/mg_3_0/mg_3_0.yy",
   },
   "spriteMaskId":null,
   "visible":true,
