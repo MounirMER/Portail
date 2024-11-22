@@ -6,8 +6,8 @@ var collision_x = x;
 var collision_y = y;
 
 // Reculer davantage dans l'axe du tir pour une position sûre
-var safe_x = collision_x - lengthdir_x(32, projectile_direction); // Recul augmenté à 16 pixels
-var safe_y = collision_y - lengthdir_y(32, projectile_direction);
+var safe_x = collision_x - lengthdir_x(16, projectile_direction); // Recul augmenté à 16 pixels
+var safe_y = collision_y - lengthdir_y(16, projectile_direction);
 
 // Supprimer l'ancienne instance du joueur
 with (obj_player) instance_destroy();

@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"Spawn",
+  "%Name":"obj_editor_water",
   "eventList":[],
   "managed":true,
-  "name":"Spawn",
+  "name":"obj_editor_water",
   "overriddenProperties":[],
   "parent":{
     "name":"Level",
     "path":"folders/Objects/Level.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_collision_parent",
+    "path":"objects/obj_collision_parent/obj_collision_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_hud_heart",
-    "path":"sprites/spr_hud_heart/spr_hud_heart.yy",
+    "name":"spr_editor_wall",
+    "path":"sprites/spr_editor_wall/spr_editor_wall.yy",
   },
   "spriteMaskId":null,
   "visible":false,

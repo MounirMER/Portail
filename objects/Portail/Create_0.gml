@@ -4,6 +4,11 @@
 /// @DnDArgument : "var" "teleport_direction"
 teleport_direction = 0;
 
+/// @DnDAction : YoYo Games.Instances.Sprite_Rotate
+/// @DnDVersion : 1
+/// @DnDHash : 32241F56
+image_angle = 0;
+
 /// @DnDAction : YoYo Games.Movement.Add_Motion
 /// @DnDVersion : 1
 /// @DnDHash : 4CA14932
