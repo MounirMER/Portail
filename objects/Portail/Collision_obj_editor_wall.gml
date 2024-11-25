@@ -6,8 +6,8 @@ var collision_x = x;
 var collision_y = y;
 
 // Initialiser la position sécurisée
-var safe_x = collision_x - lengthdir_x(16, projectile_direction);
-var safe_y = collision_y - lengthdir_y(16, projectile_direction);
+var safe_x = collision_x - lengthdir_x(48, projectile_direction);
+var safe_y = collision_y - lengthdir_y(48, projectile_direction);
 
 // Définir un seuil de recul
 var step_back = 8; // Pixels à reculer par itération

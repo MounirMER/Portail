@@ -155,6 +155,7 @@
     {"id":{"name":"banner_dust_FX_1","path":"sprites/banner_dust_FX_1/banner_dust_FX_1.yy",},},
     {"id":{"name":"Blue_Star","path":"sprites/Blue_Star/Blue_Star.yy",},},
     {"id":{"name":"blunt_1","path":"sprites/blunt_1/blunt_1.yy",},},
+    {"id":{"name":"Cake","path":"sprites/Cake/Cake.yy",},},
     {"id":{"name":"dead_1","path":"sprites/dead_1/dead_1.yy",},},
     {"id":{"name":"gsghsdj","path":"sprites/gsghsdj/gsghsdj.yy",},},
     {"id":{"name":"hdrhjsdryhdj","path":"sprites/hdrhjsdryhdj/hdrhjsdryhdj.yy",},},
@@ -241,8 +242,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
-    {"roomId":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"roomId":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
     {"roomId":{"name":"rm_level_1","path":"rooms/rm_level_1/rm_level_1.yy",},},
     {"roomId":{"name":"rm_level_2","path":"rooms/rm_level_2/rm_level_2.yy",},},
   ],
