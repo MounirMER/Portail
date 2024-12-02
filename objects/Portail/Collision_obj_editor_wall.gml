@@ -1,44 +1,51 @@
-// Calculer la direction du projectile
-var projectile_direction = point_direction(obj_player.x, obj_player.y, device_mouse_x(0), device_mouse_y(0));
-
-// Calculer la position initiale du point d'impact
 var collision_x = x;
 var collision_y = y;
 
-// Initialiser la position sécurisée
-var safe_x = collision_x - lengthdir_x(48, projectile_direction);
-var safe_y = collision_y - lengthdir_y(48, projectile_direction);
+// Calculer la direction opposée à celle du projectile
+var opposite_direction = direction + 180;
 
-// Définir un seuil de recul
-var step_back = 8; // Pixels à reculer par itération
-var max_attempts = 10; // Limite des tentatives pour éviter une boucle infinie
-var attempts = 0;
+// Initialiser la position sécurisée
+var safe_x = collision_x;
+var safe_y = collision_y;
+
+// Paramètres pour la recherche de position sûre
+var step_size = 1; // Taille du pas pour chaque itération
+var max_distance = 64; // Distance maximale pour reculer (ajustez selon vos besoins)
+var distance_checked = 0;
+var found_safe_position = false;
 
 // Boucle pour reculer jusqu'à trouver une position sûre
-while ((place_meeting(safe_x, safe_y, obj_editor_wall) || 
-        place_meeting(safe_x, safe_y, obj_editor_water) || 
-        place_meeting(safe_x, safe_y, obj_spike)) 
-        && attempts < max_attempts) 
+while (distance_checked < max_distance)
 {
-    // Calculer le recul dans la direction opposée
-    safe_x = safe_x - lengthdir_x(step_back, projectile_direction);
-    safe_y = safe_y - lengthdir_y(step_back, projectile_direction);
-    attempts += 1;
+    // Vérifier s'il y a une collision à la position actuelle
+    if (!place_meeting(safe_x, safe_y, obj_editor_wall) &&
+        !place_meeting(safe_x, safe_y, obj_editor_water) &&
+        !place_meeting(safe_x, safe_y, obj_spike))
+    {
+        // Position sûre trouvée
+        found_safe_position = true;
+        break;
+    }
+
+    // Reculer le long de la direction opposée au projectile
+    safe_x += lengthdir_x(step_size, opposite_direction);
+    safe_y += lengthdir_y(step_size, opposite_direction);
+    distance_checked += step_size;
 }
 
-// Vérifier si une position sûre a été trouvée
-if (attempts >= max_attempts) {
-    // Si aucune position sûre n'a été trouvée, garder la position actuelle
-    safe_x = obj_player.x;
-    safe_y = obj_player.y;
+if (found_safe_position)
+{
+    // Supprimer l'instance actuelle du joueur
+    with (obj_player) instance_destroy();
+
+    // Créer une nouvelle instance du joueur à la position sûre
+    instance_create_layer(safe_x, safe_y, "Instances", obj_player);
+
+    // Supprimer le projectile actuel
+    instance_destroy();
+}
+else
+{
+    // Aucune position sûre trouvée
     show_debug_message("Impossible de trouver une position sûre. Téléportation annulée.");
 }
-
-// Supprimer l'ancienne instance du joueur
-with (obj_player) instance_destroy();
-
-// Créer une nouvelle instance du joueur à la position validée
-instance_create_layer(safe_x, safe_y, "Instances", obj_player);
-
-// Supprimer l'objet actuel si nécessaire
-instance_destroy();

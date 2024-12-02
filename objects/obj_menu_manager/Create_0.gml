@@ -5,10 +5,10 @@
 audio_stop_all();
 
 /// @DnDAction : YoYo Games.Audio.Play_Audio
-/// @DnDVersion : 1
+/// @DnDVersion : 1.1
 /// @DnDHash : 6F86E0C8
 /// @DnDComment : Play menu music
-/// @DnDArgument : "soundid" "snd_music_menu"
+/// @DnDArgument : "soundid" "medival3"
 /// @DnDArgument : "loop" "1"
-/// @DnDSaveInfo : "soundid" "snd_music_menu"
-audio_play_sound(snd_music_menu, 0, 1);
+/// @DnDSaveInfo : "soundid" "medival3"
+audio_play_sound(medival3, 0, 1, 1.0, undefined, 1.0);
